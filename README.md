@@ -87,3 +87,19 @@ Observações finais
 ```
 
 Se `birth_date` não puder ser obtido, o valor será `null`.
+
+Rodando os testes
+
+Instale as dependências (ou use o ambiente virtual):
+
+```bash
+pip install -r requirements.txt
+```
+
+Execute os testes com `pytest`:
+
+```bash
+py -m pytest -q
+```
+
+Os testes usam `monkeypatch` para substituir as chamadas ao repositório e ao serviço externo, portanto não precisam de um MongoDB em execução.
